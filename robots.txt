@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /secreto/
+Sitemap: https://samanthaaaa9.github.io/site/sitemap.xml
