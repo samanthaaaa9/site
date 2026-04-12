@@ -2,25 +2,46 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Fotos | Mestre de RPG</title>
     <link rel="stylesheet" href="css/estilo.css">
     <style>
-        body { background-color: #120a2a; color: white; font-family: sans-serif; }
+        body { background-color: #120a2a; color: white; font-family: sans-serif; margin: 0; }
+        
+        header { text-align: center; padding: 20px; background: #1a0f3d; }
+        
+        nav ul { 
+            list-style: none; 
+            display: flex; 
+            gap: 15px; 
+            justify-content: center; 
+            padding: 10px; 
+            background: #2a1a5e; 
+        }
+        
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #9370db; }
+
         .galeria {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            padding: 20px;
+            padding: 40px 20px;
         }
+
         .foto-card {
             background: #311b92;
-            padding: 10px;
+            padding: 15px;
             border-radius: 10px;
             border: 2px solid #9370db;
             text-align: center;
             width: 250px;
+            transition: transform 0.3s;
         }
+
+        .foto-card:hover { transform: scale(1.05); }
+
         .foto-card img {
             width: 100%;
             height: 250px;
@@ -28,60 +49,68 @@
             border-radius: 5px;
             border: 1px solid #4b0082;
         }
+
         .foto-card p {
-            margin-top: 10px;
-            font-size: 0.9em;
+            margin-top: 15px;
+            font-size: 1em;
             color: #d1c4e9;
             font-weight: bold;
         }
-        nav ul { list-style: none; display: flex; gap: 15px; background: #2a1a5e; padding: 10px; }
-        nav a { color: white; text-decoration: none; font-weight: bold; }
+
+        footer { text-align: center; padding: 20px; margin-top: 40px; }
     </style>
 </head>
 <body>
+
     <header>
+        <img src="imagens/logoUniube.png" width="100" alt="Logo Uniube">
+        <h1>Mestre dos Mundos: RPG</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="fotos.html">Galeria</a></li>
-                <li><a href="rolagemdedados.html">Dados</a></li>
+                
             </ul>
         </nav>
-        <h1 style="text-align: center;">Galeria de Personagens</h1>
     </header>
 
     <main>
+        <h2 style="text-align: center;">Galeria de Imagens</h2>
+        
         <div class="galeria">
             <div class="foto-card">
-                <img src="imagens/rpg/rpg7.jpg" alt="RPG">
-                <p>Guerreira de Elite</p>
+                <img src="imagens/rpg7.jpg" >
+                
             </div>
+
             <div class="foto-card">
-                <img src="imagens/rpg/rpg8.jpg" alt="RPG">
-                <p>Mestre de Armas</p>
+                <img src="imagens/rpg8.jpg">
+                
             </div>
+
             <div class="foto-card">
-                <img src="imagens/rpg/rpg9.jpg" alt="RPG">
-                <p>Ladino das Sombras</p>
+                <img src="imagens/rpg9.jpg" >
+              
             </div>
+
             <div class="foto-card">
-                <img src="imagens/rpg/rpg10.jpg" alt="RPG">
-                <p>Arqueira Élfica</p>
+                <img src="imagens/rpg3.jpeg">
+                
             </div>
+
             <div class="foto-card">
-                <img src="imagens/rpg/rpg3.jpeg" alt="RPG">
-                <p>Paladino Real</p>
+                <img src="imagens/rpg6.png" >
+               
             </div>
+
             <div class="foto-card">
-                <img src="imagens/rpg/rpg6.png" alt="RPG">
-                <p>Feiticeira Arcana</p>
+                <img src="imagens/rpg10.jpg">
+                
             </div>
         </div>
     </main>
 
-    <footer style="text-align: center; margin-top: 30px;">
-        <hr>
-        <p>Desenvolvido por: Samantha Aparecida | RA: 1200661</p>
-    </footer>
+   
+
+
 </body>
 </html>
