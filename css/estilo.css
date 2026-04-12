@@ -1,1 +1,84 @@
 
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.6; 
+    margin: 0; 
+    background-color: #1a1423; 
+    color: #e0d0f0; 
+}
+
+header { 
+    background-color: #4b0082; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+    border-bottom: 4px solid #9370db; 
+}
+
+nav ul { 
+    background: #311b92; 
+    padding: 10px 0; 
+    list-style: none; 
+    text-align: center; 
+    margin: 0;
+}
+
+nav ul li { display: inline; margin: 0 15px; }
+
+nav ul li a { 
+    color: #d1c4e9; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: 0.3s;
+}
+
+nav ul li a:hover { 
+    color: #ffffff; 
+    text-shadow: 0 0 10px #9370db; 
+}
+
+main { 
+    padding: 30px; 
+    max-width: 1000px; 
+    margin: 30px auto; 
+    background: #261c36; 
+    border-radius: 15px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border: 1px solid #4b0082;
+}
+
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px 0; 
+    background-color: #1a1423;
+}
+
+table, th, td { border: 1px solid #673ab7; }
+
+th { 
+    background-color: #673ab7; 
+    color: white; 
+    padding: 12px;
+}
+
+td { padding: 10px; color: #e0d0f0; }
+
+tr:nth-child(even) { background-color: #2e2440; }
+
+ul, ol { padding-left: 20px; }
+li { margin-bottom: 10px; }
+
+fieldset { border: 1px solid #9370db; border-radius: 8px; }
+legend { color: #9370db; font-weight: bold; }
+
+footer { 
+    text-align: center; 
+    padding: 20px; 
+    background: #120c1a; 
+    color: #7e57c2; 
+    margin-top: 40px; 
+}
+
+main a { color: #b388ff; text-decoration: underline; }

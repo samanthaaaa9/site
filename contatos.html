@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato | Mestre de RPG</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/logoUniube.png" width="120" alt="Logo Uniube">
+        <h1>Mestre dos Mundos: RPG</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Fale com o Mestre</h2>
+        <p>Tem alguma dúvida sobre as regras ou quer enviar uma sugestão de aventura? Preencha o formulário abaixo e nos envie uma "coruja".</p>
+
+        <form>
+            <fieldset>
+                <legend>Informações do Aventureiro</legend>
+                <br>
+                <label for="nome">Nome do Jogador:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Ex: Arwen Estrela da Manhã" style="width: 100%; padding: 8px; margin-top: 5px;"><br><br>
+
+                <label for="email">E-mail de Contato:</label><br>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" style="width: 100%; padding: 8px; margin-top: 5px;"><br><br>
+
+                <label for="assunto">Assunto:</label><br>
+                <select id="assunto" name="assunto" style="width: 100%; padding: 8px; margin-top: 5px;">
+                    <option value="duvida">Dúvida sobre Regras</option>
+                    <option value="sugestao">Sugestão de Cenário</option>
+                    <option value="bug">Relatar Erro no Site</option>
+                    <option value="outros">Outros</option>
+                </select><br><br>
+
+                <label for="mensagem">Sua Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" style="width: 100%; padding: 8px; margin-top: 5px;" placeholder="Escreva aqui sua mensagem..."></textarea><br><br>
+
+                <button type="button" style="background-color: #1c0336; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+                    Enviar Mensagem
+                </button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <hr>
+        p>Desenvolvido por:Samnatha Aparecida RA:1200661</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Rolagem de Dados | Mestre de RPG</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/logoUniube.png" width="120" alt="Logo Uniube">
+        <h1>Mestre dos Mundos: RPG</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Simulador de Rolagem de Dados</h2>
+        <p>No RPG, o destino dos heróis é decidido pela sorte. Cada dado tem uma função específica dentro do jogo.</p>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; margin-top: 30px;">
+            <div style="background: #311b92; padding: 20px; border-radius: 10px; border: 2px solid #9370db; text-align: center; width: 150px;">
+                <h3 style="margin: 0;">D4</h3>
+                <p style="font-size: 0.8em;">Dano de adagas</p>
+                <button type="button" style="background: #9370db; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 5px;">Rolar D4</button>
+            </div>
+
+            <div style="background: #311b92; padding: 20px; border-radius: 10px; border: 2px solid #9370db; text-align: center; width: 150px;">
+                <h3 style="margin: 0;">D6</h3>
+                <p style="font-size: 0.8em;">Espada Curta</p>
+                <button type="button" style="background: #9370db; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 5px;">Rolar D6</button>
+            </div>
+
+            <div style="background: #311b92; padding: 20px; border-radius: 10px; border: 2px solid #9370db; text-align: center; width: 150px;">
+                <h3 style="margin: 0;">D12</h3>
+                <p style="font-size: 0.8em;">Machado Grande</p>
+                <button type="button" style="background: #9370db; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 5px;">Rolar D12</button>
+            </div>
+
+            <div style="background: #4b0082; padding: 20px; border-radius: 10px; border: 2px solid #ffffff; text-align: center; width: 150px;">
+                <h3 style="margin: 0; color: #ffffff;">D20</h3>
+                <p style="font-size: 0.8em; color: #d1c4e9;">Teste de Acerto</p>
+                <button type="button" style="background: #ffffff; color: #4b0082; border: none; padding: 5px 10px; cursor: pointer; border-radius: 5px; font-weight: bold;">Rolar D20</button>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 40px;">Entendendo os Resultados</h3>
+        <table>
+            <tr>
+                <th>Resultado no D20</th>
+                <th>Efeito Narrativo</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><span style="color: #ff5555;">Falha Crítica!</span> Algo terrível acontece.</td>
+            </tr>
+            <tr>
+                <td>2 a 9</td>
