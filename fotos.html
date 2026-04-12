@@ -5,9 +5,37 @@
     <title>Galeria de Fotos | Mestre de RPG</title>
     <link rel="stylesheet" href="css/estilo.css">
     <style>
-        .galeria { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
-        .foto-card { background: #311b92; padding: 10px; border-radius: 10px; border: 2px solid #9370db; text-align: center; width: 250px; }
-        .foto-card img { width: 100%; height: 250px; object-fit: cover; border-radius: 5px; }
+        body { background-color: #120a2a; color: white; font-family: sans-serif; }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .foto-card {
+            background: #311b92;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #9370db;
+            text-align: center;
+            width: 250px;
+        }
+        .foto-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 1px solid #4b0082;
+        }
+        .foto-card p {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #d1c4e9;
+            font-weight: bold;
+        }
+        nav ul { list-style: none; display: flex; gap: 15px; background: #2a1a5e; padding: 10px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -16,30 +44,56 @@
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="fotos.html">Galeria</a></li>
+                <li><a href="rolagemdedados.html">Dados</a></li>
             </ul>
         </nav>
-        <h1>Galeria de Personagens</h1>
+        <h1 style="text-align: center;">Galeria de Personagens</h1>
     </header>
 
     <main>
         <div class="galeria">
+
             <div class="foto-card">
-                <img src="imagens/rpg7.jpg" alt="RPG">
+                <img src="imagens/rpg/rpg7.jpg" alt="Personagem">
                 <p>Guerreira de Elite</p>
             </div>
+
             <div class="foto-card">
-                <img src="imagens/rpg8.jpg" alt="RPG">
+                <img src="imagens/rpg/rpg8.jpg" alt="Personagem">
                 <p>Mestre de Armas</p>
             </div>
+
             <div class="foto-card">
-                <img src="imagens/rpg3.jpeg" alt="RPG">
-                <p>Paladino</p>
+                <img src="imagens/rpg/rpg9.jpg" alt="Personagem">
+                <p>Ladino das Sombras</p>
             </div>
+
             <div class="foto-card">
-                <img src="imagens/rpg6.png" alt="RPG">
-                <p>Feiticeira</p>
+                <img src="imagens/rpg/rpg10.jpg" alt="Personagem">
+                <p>Arqueira Élfica</p>
             </div>
+
+            <div class="foto-card">
+                <img src="imagens/rpg/rpg3.jpeg" alt="Personagem">
+                <p>Paladino Real</p>
+            </div>
+
+            <div class="foto-card">
+                <img src="imagens/rpg/rpg6.png" alt="Personagem">
+                <p>Feiticeira Arcana</p>
+            </div>
+
+            <div class="foto-card">
+                <img src="imagens/rpg/rpg5.webp" alt="Cenário">
+                <p>Cenário de Campanha</p>
+            </div>
+
         </div>
     </main>
+
+    <footer style="text-align: center; margin-top: 30px;">
+        <hr>
+        <p>Desenvolvido por: Samantha Aparecida | RA: 1200661</p>
+    </footer>
 </body>
 </html>
