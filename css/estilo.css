@@ -3,6 +3,19 @@
   --cor-secundaria: #9b59b6;
   --fonte-principal: 'Georgia', serif;
 }
+#menu-btn {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #menu-btn { display: block; }
+  #menu-lista { display: none; flex-direction: column; }
+  #menu-lista.aberto { display: flex; }
+}
 
 body {
   font-family: var(--fonte-principal);
