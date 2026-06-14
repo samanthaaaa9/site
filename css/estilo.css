@@ -1,4 +1,14 @@
+:root {
+  --cor-primaria: #2c003e;
+  --cor-secundaria: #9b59b6;
+  --fonte-principal: 'Georgia', serif;
+}
 
+body {
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
 body { 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     line-height: 1.6; 
@@ -82,3 +92,31 @@ footer {
 }
 
 main a { color: #b388ff; text-decoration: underline; }
+/* No seu style.css */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+@keyframes aparece {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  animation: aparece 1s ease-in-out;
+}
